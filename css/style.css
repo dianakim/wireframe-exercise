@@ -1,6 +1,7 @@
 body {
   font-size: 1.3em;
 }
+
 /* All items in the nav section */
 nav div {
   width: 190px;
@@ -20,6 +21,7 @@ nav {
   line-height: 70px;
   text-align: center;
   border: 1px solid darkgray;
+  box-sizing: border-box;
 }
 
 main {
@@ -36,6 +38,7 @@ main section:nth-child(1) {
   line-height: 450px;
   background: lightgray;
   border: 1px solid darkgray;
+  box-sizing: border-box;
 }
 
 /* All 3 Sub Banners */
@@ -50,6 +53,7 @@ main section:nth-child(n+2):nth-child(-n+4) {
   box-sizing: border-box;
   margin-bottom: 30px;
 }
+
 /* Middle Sub Banner */
 main section:nth-child(3) {
   margin-left: 30px;
@@ -65,6 +69,7 @@ main section:nth-child(5) {
   line-height: 375px;
   background: lightgray;
   border: 1px solid darkgray;
+  box-sizing: border-box;
   overflow: auto;
   margin-right: 30px;
   display: inline-block;
@@ -78,22 +83,25 @@ main section:nth-child(6) {
   overflow-y: scroll;
   overflow-x: hidden;
 }
+
 /* Featured Section Heading first line */
 main section:nth-child(6) p:nth-child(1) {
   font-size: 2.2em;
   margin-bottom: 20px;
 }
+
 /* Featured Section Heading lorem ipsum */
 main section:nth-child(6) p:nth-child(2) {
   font-size: 1.9em;
   margin-bottom: 5px;
 }
+
 /* Call To Action */
 main section:nth-child(6) input {
   width: 65%;
   height: 40px;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 27px;
   transition: background-color 350ms ease;
   background-color: lightgray;
   font-size: 2em;
