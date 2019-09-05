@@ -1,120 +1,100 @@
 body {
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 /* All items in the nav section */
 nav div {
-  width: 190px;
-  line-height: 70px;
+  width: 150px;
+  line-height: 90px;
   text-align: center;
   float: left; 
+  color: #767676;
 }
 
 nav {
+  width: 100%;
+  background: #444444;
   overflow: auto;
 }
 
+nav section {
+  width: 960px;
+  margin: auto;
+}
 #logo {
-  width: 200px;
-  height: 70px;
-  background: lightgray;
-  line-height: 70px;
-  text-align: center;
-  border: 1px solid darkgray;
-  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: left;
 }
 
 main {
   width: 960px;
+  margin: auto;
 }
 
 /* Hero Image */
-main section:nth-child(1) {
+main img:nth-child(1) {
   margin-top: 30px;
   margin-bottom: 30px;
-  width: 960px;
-  height: 450px;
-  text-align: center;
-  line-height: 450px;
-  background: lightgray;
-  border: 1px solid darkgray;
-  box-sizing: border-box;
 }
 
 /* All 3 Sub Banners */
-main section:nth-child(n+2):nth-child(-n+4) {
-  width: 300px;
-  height: 375px;
+main img:nth-child(n+2):nth-child(-n+4) {
   float: left;
-  text-align: center;
-  line-height: 375px;
-  background: lightgray;
-  border: 1px solid darkgray;
-  box-sizing: border-box;
   margin-bottom: 30px;
 }
 
 /* Middle Sub Banner */
-main section:nth-child(3) {
+main img:nth-child(3) {
   margin-left: 30px;
+  margin-right: 30px;
+}
+
+/* Featured Section Banner */
+main img:nth-child(5) {
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
-/* Featured Section Banner */
-main section:nth-child(5) {
-  width: 480px;
-  height: 375px;
-  text-align: center;
-  line-height: 375px;
-  background: lightgray;
-  border: 1px solid darkgray;
-  box-sizing: border-box;
-  overflow: auto;
-  margin-right: 30px;
-  display: inline-block;
-}
-
-main section:nth-child(6) {
-  width: 440px;
-  height: 375px;
-  font-size: 10px;
-  display: inline-block;
-  overflow-y: scroll;
-  overflow-x: hidden;
+main section {
+  width: 445px;
+  height: 400px;
+  float: right;
 }
 
 /* Featured Section Heading first line */
-main section:nth-child(6) p:nth-child(1) {
-  font-size: 2.2em;
-  margin-bottom: 20px;
-}
-
-/* Featured Section Heading lorem ipsum */
-main section:nth-child(6) p:nth-child(2) {
-  font-size: 1.9em;
+main section p:nth-child(1) {
+  font-size: 1.4em;
   margin-bottom: 5px;
 }
 
-/* Call To Action */
-main section:nth-child(6) input {
-  width: 65%;
-  height: 40px;
-  border-radius: 10px;
-  margin-top: 27px;
-  transition: background-color 350ms ease;
-  background-color: lightgray;
-  font-size: 2em;
+/* Featured Section Heading lorem ipsum */
+main section p:nth-child(2) {
+  font-size: 1.2em;
+  font-style: italic;
+  height: 330px;
+  overflow-y: scroll;
 }
 
-main section:nth-child(6) input:hover {
-  background-color: white;
+/* Call To Action */
+main section input {
+  width: 40%;
+  height: 40px;
+  transition: background-color 350ms ease;
+  background-color: #000000;
+  font-size: 1em;
+  color: #AAAAAB;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+main section input:hover {
+  background-color: darkgray;
+  color: #E41F41;
 }
 
 footer {
-  width: 960px;
+  width: 100%;
   height: 187px;
-  background: lightgray;
-  border: 1px solid darkgray;
-  margin-top: 30px;
+  background: #444444;
 }
